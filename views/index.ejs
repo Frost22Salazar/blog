@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog</title>
+    <link rel="stylesheet" type="text/css" href="/public/estilo.css">
+</head>
+<body>
+    <h1>blog</h1>
+    <ul>
+        <% posts.forEach(function(posts)) { %>
+            <li><a href="/post/<%= post.id%>">
+                <%= post.titulo %>
+            </a>
+        </li>
+
+        <%};%>
+        <a href="/add">adicionar nova postagem</a>
+    </ul>
+    
+</body>
+</html>
